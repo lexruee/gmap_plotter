@@ -12,3 +12,4 @@
 *.o
 *.a
 mkmf.log
+/lib/gmap_plotter/public/bower_components/*
