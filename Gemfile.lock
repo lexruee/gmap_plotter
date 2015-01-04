@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     gmap_plotter (0.0.1)
-      sinatra (> 0)
-      sinatra-contrib (> 0)
+      sinatra (~> 1.4)
+      sinatra-contrib (~> 1.4)
 
 GEM
   remote: https://rubygems.org/
