@@ -1,7 +1,4 @@
 require "gmap_plotter/version"
-require 'ostruct'
-require 'net/http'
-require 'tempfile'
 require 'json'
 
 require 'sinatra/base'
