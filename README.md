@@ -29,7 +29,7 @@ Or install it yourself as:
 ## Usage
 
 ###Running
-To run the app enter the command:
+To run the app open a terminal and enter the following command:
 ```
 gmap_plotter
 ```
