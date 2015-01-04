@@ -4,7 +4,7 @@ GmapPlotter is a little sinatra app for plotting gps points on a google map.
 
 ##Demo app
 
-![Alt text](screenshot.jpg?raw=true "Screenshot")
+![Alt text](screenshot.png?raw=true "Screenshot")
 
 A demo app runs on heroku:
 [https://gmap-plotter.herokuapp.com/](https://gmap-plotter.herokuapp.com/)
