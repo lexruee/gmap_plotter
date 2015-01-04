@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Alexander Rueedlinger"]
   spec.email         = ["a.rueedlinger@gmail.com"]
   spec.summary       = %q{A little app for plotting gps points on a google map.}
-  spec.description   = %q{Gmap Plotter is little app for plotting gps points on a google map.}
+  spec.description   = %q{Gmap Plotter is a little app for plotting gps points on a google map.}
   spec.homepage      = "https://github.com/lexruee/gmap_plotter"
   spec.license       = "MIT"
 
