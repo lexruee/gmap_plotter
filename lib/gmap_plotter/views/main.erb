@@ -1,0 +1,24 @@
+<!-- google map -->
+<div class="ui stacked segment">
+  <div id="map-canvas"></div>
+</div>
+
+<!-- modal -->
+<% [
+        {
+                title: 'Plot a path',
+                type: 'path',
+                description: 'Please enter a list of points forming a path in the text field below.'
+        },
+        {
+                title: 'Plot markers',
+                type: 'markers',
+                description: 'Please enter a list of markers in the text field below.'
+
+        }
+   ].each do |modal|
+%>
+    <%= erb :'_modal', locals: { modal: modal } %>
+<% end %>
+
+<%= erb :'_file_upload' %>

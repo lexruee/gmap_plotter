@@ -1,0 +1,46 @@
+<div class="ui modal" id="plot-<%= modal[:type] %>-modal">
+  <i class="close icon"></i>
+  <div class="header">
+    <%= modal[:title] %>
+  </div>
+  <div class="content">
+
+    <div class="description">
+
+      <p><%= modal[:description] %></p>
+      <p>
+        The json format looks like this:
+      <pre>
+    [
+        [-34.397, 150.644],
+        [-34.397, 150.644],
+        [-34.397, 150.644],
+        [-34.397, 150.644],
+        ...
+    ]
+     </pre>
+     </p>
+     <p>
+      A point corresponds to:
+      <pre>
+    [ lat_value, lng_value ]
+      </pre>
+      </p>
+      <div class="ui form">
+        <div class="field">
+          <label>Points</label>
+          <textarea id="plot-data-<%= modal[:type] %>"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon button plot-<%= modal[:type] %>-button">
+      Plot
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="ui modal" id="plot-file-modal">
+  <i class="close icon"></i>
+  <div class="header">
+    File upload
+  </div>
+  <div class="content">
+
+    <div class="description">
+
+      <p>Please upload a file whose content follows the json format below:</p>
+      <p>
+            <pre>
+    [
+        [-34.397, 150.644],
+        [-34.397, 150.644],
+        [-34.397, 150.644],
+        [-34.397, 150.644],
+        ...
+    ]
+            </pre>
+      </p>
+      <p>
+        A point corresponds to:
+      <pre>
+    [ lat_value, lng_value ]
+      </pre>
+      </p>
+      <form method="post" enctype="multipart/form-data" id="file-upload">
+      <div class="ui form">
+        <div class="grouped fields">
+          <label>File</label>
+          <div class="field">
+            <input name="File" type="file" accept="text/json" id="plot-data-file">
+          </div>
+          <label for="plot-type">Plot type</label>
+          <div class="field">
+            <div class="ui radio checkbox checked">
+              <input type="radio" name="plot-type" checked="" class="plot-type" value="path">
+              <label>Path</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="plot-type" class="plot-type" value="markers">
+              <label>Markers</label>
+            </div>
+          </div>
+        </div>
+
+       </div>
+      </form>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon button plot-file-button">
+      Plot
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
