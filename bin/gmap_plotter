@@ -1,0 +1,2 @@
+#!/bin/sh
+rackup config.ru -p 3000
