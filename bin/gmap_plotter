@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
 require 'gmap_plotter'
+GmapPlotter::Server.set :port, 3000
 GmapPlotter::Server.run!

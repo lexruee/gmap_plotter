@@ -1,6 +1,6 @@
 # GmapPlotter
 
-TODO: Write a gem description
+GmapPlotter is a little sinatra app for plotting gps points on a google map.
 
 ## Installation
 
@@ -20,7 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+###Running
+To run the app enter the command:
+```
+gmap_plotter
+```
+
+This command starts the app on ```http://localhost:3000```.
+
+###Deployment
+
+You can deploy you're own gmap plotter app by creating a ```config.ru``` rack config file.
+
+Example ```config.ru``` file:
+```
+require 'gmap_plotter'
+run GmapPlotter::Server
+```
+And run it via:
+```
+rackup config.ru -p 3000
+```
 
 ## Contributing
 
